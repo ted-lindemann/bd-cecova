@@ -1,2 +1,2 @@
 # bd-cecova
-Webové stránky Bytového družstva 
+Web page of a local housing association
