@@ -50,6 +50,13 @@ header nav ul li a {
 	padding: 15px;
 }
 #prihlaseni-link {
-	margin-left: 30px;
+	margin-left: 35px;
+	position: relative;
+}
+#prihlaseni-link i {
+	padding-right: 15px;
+	font-size: 0.9em;
+	position: relative;
+	bottom: 3px;
 }
 
