@@ -1,3 +1,5 @@
+
+
 header {
 	height: 100vh;
 	width: 100vw;
@@ -130,6 +132,38 @@ header .header-main .main-btns button {
 	border: 3.5px solid #1E1E1E;
 }
 #btn-kdo-jsme {
-	background-color: rgb(255, 255, 255,0.20);
+	background: transparent;
 	border: 3.5px solid #1E1E1E;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.35s ease;
+}
+#btn-kdo-jsme::before,
+#btn-kdo-jsme::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	left: 0;
+	z-index: -1;
+	box-sizing: border-box;
+	position: absolute;
+	background: #1E1E1E;
+	transition: all 0.35s ease;
+} 
+#btn-kdo-jsme::before {
+	opacity: 0.5;
+}
+#btn-kdo-jsme::after {
+	transition-delay: 0.2s;
+}
+#btn-kdo-jsme:hover{
+	color: white;
+	z-index: 1;
+	background: transparent;
+}
+  
+#btn-kdo-jsme:hover:before,
+#btn-kdo-jsme:hover:after{
+	top: 0;
 }
