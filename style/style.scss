@@ -6,46 +6,55 @@ body {
 	font-weight: 400;
     font-size: 100%;
     background-color: #fff9f9;
+    line-height: 160%;
 }
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+    gap: 15px;
     width: 100vw;
     margin: 0 5vw;
 }
 h1 {
-    font-size: 4.2em;
+    font-size: 3.7em;
     letter-spacing: -1.5px;
     font-family: 'El Messiri';
     font-weight: 600;  
     text-shadow: 1px 1px 3px white;
+    margin-top: 15px;
 }
 h2 {
-    font-size: 2.2em;
+    font-size: 2em;
     letter-spacing: -1.5px;
     font-family: 'Expletus Sans';
     font-weight: 400; 
+    line-height: 130%;
+    margin-bottom: 25px;
 }
 h3 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-family: 'Expletus Sans';
     font-weight: 600; 
+    margin-bottom: 15px;
+    color: #BC2D1F;
 }
 p {
     font-size: 1.2em;
     font-family: "Faustina";
     font-weight: 400;
+    margin-bottom: 15px;
 }
 button {
     font-size: 1.2em;
     border-radius: 20px;
-    padding: 15px;
+    padding: 15px 10px;
     font-family: 'Expletus Sans';
     font-weight: 600; 
+    width: max-content;
+    cursor: pointer;
 }
 ul li {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: 'Expletus Sans';
     font-weight: 600; 
 }
