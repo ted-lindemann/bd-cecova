@@ -16,7 +16,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     gap: 15px;
     width: 100vw;
-    margin: 0 5vw;
+    margin: 0 8vw;
 }
 h1 {
     font-size: 3.7em;
@@ -57,7 +57,7 @@ button {
     cursor: pointer;
 }
 ul li {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-family: 'Expletus Sans';
     font-weight: 600; 
 }
@@ -156,8 +156,3 @@ a {
     font-weight: 600;
     src: url('../fonts/faustina-latin-ext-600.woff2') format('woff2'); 
 }
-
-  
-/* font-family: 'El Messiri', sans-serif;
-font-family: 'Expletus Sans', cursive;
-font-family: 'Faustina', serif; */

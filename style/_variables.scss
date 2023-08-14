@@ -1,0 +1,35 @@
+// ---------- COLORS ----------
+$color-main: #BC2D1F;
+$color-secondary: #1E1E1E;
+$color-background: #fff9f9;
+
+$color-grey-darkness3: $color-secondary;
+$color-grey-darkness2: #262626;
+$color-grey-darkness1: #2b2b2b;
+
+$color-gradient-darker: linear-gradient(0deg, $color-grey-darkness3 0%, 
+	$color-grey-darkness3 50%,$color-grey-darkness2 50%, $color-grey-darkness2 100%);
+
+$color-gradient-lighter: linear-gradient(0deg, $color-grey-darkness2 0%, 
+	$color-grey-darkness2 50%,$color-grey-darkness1 50%, $color-grey-darkness1 100%);
+
+
+// ---------- TEXT ----------
+$text-regular-family: "Faustina";
+$text-regular-size: 1.2em;
+$text-regular-weight: 400;
+
+$text-headings-family: 'Expletus Sans';
+$text-headings-weight: 600;
+
+$text-heading-main-family: 'El Messirtext';
+$text-heading-main-weight: 600;
+
+
+
+
+
+// ---------- ELM STYLES ----------
+$btn-border: 3.5px solid $color-secondary;
+
+// ---------- ELM SIZES ----------
