@@ -1,0 +1,59 @@
+@import "variables";
+
+
+// ---------- TEXT ----------
+@mixin textRegular {
+	font: {
+		family: $text-regular-family;
+		size: 1.2em;
+    	weight: $text-regular-weight;
+	}
+	color: $text-color;
+}
+
+@mixin headings($color: $text-color, $weight: $text-headings-weight) {
+	font: {
+		family: $text-headings-family;
+		weight: $weight;
+	}
+	letter-spacing: $text-letter-spacing;
+	color: $color;
+}
+
+@mixin textH1 {
+	font: {
+		family: $text-heading-main-family;
+		size: 3.7em;
+		weight: $text-headings-weight;
+	}
+	text-shadow: $text-shadow;
+	letter-spacing: $text-letter-spacing;
+	color: $text-color;
+}
+
+@mixin textH2 {
+	@include headings($weight: 400);
+	font-size: 2em;
+	letter-spacing: $text-letter-spacing;
+	line-height: 130%;
+	margin-bottom: 25px;
+}
+
+@mixin textH3 {
+	@include headings($color: $main-color);
+	font-size: 1.5em;
+	line-height: 130%;
+	margin-bottom: 15px;
+}
+
+@mixin textH4 {
+	@include headings();
+	font-size: 1.5em;
+	line-height: 130%;
+	margin-bottom: 15px;
+}
+
+@mixin textPar {
+	@include textRegular;
+	margin-bottom: 15px;
+}
