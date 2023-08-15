@@ -1,52 +1,28 @@
 @import "partials/variables";
 @import "partials/mixins";
 
-html {
-    scroll-behavior: smooth;
-}
-body {
-    font-family: "Faustina";
-	font-weight: 400;
-    font-size: 100%;
-    background-color: #fff9f9;
-    line-height: 160%;
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 15px;
-    width: 100vw;
-    margin: 0 8vw;
-}
+@include general;
+@include grid;
+
+// ---------- ELEMENTS ----------
+
 h1 {
-    font-size: 3.7em;
-    letter-spacing: -1.5px;
-    font-family: 'El Messiri';
-    font-weight: 600;  
-    text-shadow: 1px 1px 3px white;
-    margin-top: 15px;
+    @include headingH1;
 }
 h2 {
-    font-size: 2em;
-    letter-spacing: -1.5px;
-    font-family: 'Expletus Sans';
-    font-weight: 400; 
-    line-height: 130%;
-    margin-bottom: 25px;
+    @include headingH2;
 }
 h3 {
-    font-size: 1.5em;
-    font-family: 'Expletus Sans';
-    font-weight: 600; 
-    margin-bottom: 15px;
-    color: #BC2D1F;
+    @include headingH3;
 }
+h4 {
+    @include headingH4;
+}
+
 p {
-    font-size: 1.2em;
-    font-family: "Faustina";
-    font-weight: 400;
-    margin-bottom: 15px;
+    @include textPar;
 }
+
 button {
     font-size: 1.2em;
     border-radius: 20px;
@@ -67,6 +43,8 @@ a {
     font-family: 'Expletus Sans';
     font-weight: 400; 
 }
+
+// ---------- FONTS ----------
 
 /* el-messiri-regular - latin_latin-ext */
 @font-face {
