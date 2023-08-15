@@ -1,14 +1,40 @@
 @import "variables";
 
+@mixin general {
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		font-family: $text-regular-family;
+		font-weight: $text-regular-weight;
+		font-size: $text-regular-size;
+		background-color: $color-body;
+		line-height: $text-regular-line-height;
+	}
+}
+
+@mixin grid {
+	display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+    width: 100svw;
+    margin: 0 8svw;
+}
 
 // ---------- TEXT ----------
-@mixin textRegular {
+
+@mixin textRegular($color: $text-color) {
 	font: {
 		family: $text-regular-family;
 		size: 1.2em;
     	weight: $text-regular-weight;
 	}
-	color: $text-color;
+	color: $color;
+}
+
+@mixin textPar {
+	@include textRegular;
+	margin-bottom: 15px;
 }
 
 @mixin headings($color: $text-color, $weight: $text-headings-weight) {
@@ -20,7 +46,7 @@
 	color: $color;
 }
 
-@mixin textH1 {
+@mixin headingH1 {
 	font: {
 		family: $text-heading-main-family;
 		size: 3.7em;
@@ -31,7 +57,7 @@
 	color: $text-color;
 }
 
-@mixin textH2 {
+@mixin headingH2 {
 	@include headings($weight: 400);
 	font-size: 2em;
 	letter-spacing: $text-letter-spacing;
@@ -39,21 +65,17 @@
 	margin-bottom: 25px;
 }
 
-@mixin textH3 {
+@mixin headingH3 {
 	@include headings($color: $main-color);
 	font-size: 1.5em;
 	line-height: 130%;
 	margin-bottom: 15px;
 }
 
-@mixin textH4 {
+@mixin headingH4 {
 	@include headings();
 	font-size: 1.5em;
 	line-height: 130%;
 	margin-bottom: 15px;
 }
 
-@mixin textPar {
-	@include textRegular;
-	margin-bottom: 15px;
-}
