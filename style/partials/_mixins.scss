@@ -14,11 +14,14 @@
 }
 
 @mixin grid {
-	display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 15px;
-    width: 100svw;
-    margin: 0 8svw;
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 15px;
+		width: 100svw;
+		margin: 0 8svw;
+	}
+	
 }
 
 // ---------- TEXT ----------
@@ -66,7 +69,7 @@
 }
 
 @mixin headingH3 {
-	@include headings($color: $main-color);
+	@include headings($color: $color-main);
 	font-size: 1.5em;
 	line-height: 130%;
 	margin-bottom: 15px;

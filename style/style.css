@@ -14,40 +14,55 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 15px;
-  width: 100vw;
-  margin: 0 8vw;
+  width: 100svw;
+  margin: 0 8svw;
 }
 
 h1 {
-  font-size: 3.7em;
-  letter-spacing: -1.5px;
   font-family: "El Messiri";
+  font-size: 3.7em;
   font-weight: 600;
   text-shadow: 1px 1px 3px white;
-  margin-top: 15px;
+  letter-spacing: -1.5px;
+  color: black;
 }
 
 h2 {
-  font-size: 2em;
-  letter-spacing: -1.5px;
   font-family: "Expletus Sans";
   font-weight: 400;
+  letter-spacing: -1.5px;
+  color: black;
+  font-size: 2em;
+  letter-spacing: -1.5px;
   line-height: 130%;
   margin-bottom: 25px;
 }
 
 h3 {
-  font-size: 1.5em;
   font-family: "Expletus Sans";
   font-weight: 600;
-  margin-bottom: 15px;
+  letter-spacing: -1.5px;
   color: #BC2D1F;
+  font-size: 1.5em;
+  line-height: 130%;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-family: "Expletus Sans";
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  color: black;
+  font-size: 1.5em;
+  line-height: 130%;
+  margin-bottom: 15px;
 }
 
 p {
-  font-size: 1.2em;
   font-family: "Faustina";
+  font-size: 1.2em;
   font-weight: 400;
+  color: black;
   margin-bottom: 15px;
 }
 

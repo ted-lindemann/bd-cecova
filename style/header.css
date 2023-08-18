@@ -1,6 +1,6 @@
 header {
   height: 100svh;
-  width: 100svw;
+  max-width: 100%;
   background-image: url(../img/background-tiny.jpg);
   background-position: center;
   background-size: cover;
@@ -87,7 +87,7 @@ header nav ul #prihlaseni-link:hover::before {
   background-image: url(../img/user-hover.ico);
 }
 header .main {
-  height: calc(100vh - 90px);
+  height: calc(100svh - 90px);
   align-items: center;
 }
 header .header-main {
