@@ -1,27 +1,24 @@
 header {
-  height: 100vh;
-  width: 100vw;
+  height: 100svh;
+  width: 100svw;
   background-image: url(../img/background-tiny.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 header menu {
   width: 100%;
   display: flex;
   align-items: center;
   background: linear-gradient(0deg, #1E1E1E 0%, #1E1E1E 50%, #262626 50%, #262626 100%);
 }
-
-#bd-logo {
+header #bd-logo {
   grid-column: span 4;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-
-header menu .bd-nadpis {
+header .bd-nadpis {
   font-size: 1.7em;
   letter-spacing: -1px;
   font-family: "El Messiri";
@@ -29,25 +26,21 @@ header menu .bd-nadpis {
   margin-left: 15px;
   color: white;
 }
-
 header nav {
   width: 100%;
   height: 100%;
   grid-column: span 8;
 }
-
 header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
 }
-
 header nav ul li {
   display: flex;
   position: relative;
 }
-
 header nav ul li a {
   color: white;
   text-align: center;
@@ -56,11 +49,9 @@ header nav ul li a {
   width: 100%;
   padding: 25px 15px;
 }
-
 header nav ul li a:hover {
   background: linear-gradient(0deg, #262626 0%, #262626 50%, #2b2b2b 50%, #2b2b2b 100%);
 }
-
 header nav ul li a::after {
   content: "";
   display: block;
@@ -71,18 +62,15 @@ header nav ul li a::after {
   background: #BC2D1F;
   transition: width 0.3s ease, left 0.3s ease;
 }
-
-header nav ul li a:hover:after {
+header nav ul li a:hover::after {
   width: 80%;
   left: 10%;
 }
-
-#prihlaseni-link {
+header nav ul #prihlaseni-link {
   margin-left: 35px;
   position: relative;
 }
-
-#prihlaseni-link::before {
+header nav ul #prihlaseni-link::before {
   content: "";
   background-image: url(../img/user.ico);
   background-size: 25px;
@@ -95,16 +83,13 @@ header nav ul li a:hover:after {
   margin-right: -5px;
   transition: all 0.2s ease;
 }
-
-#prihlaseni-link:hover::before {
+header nav ul #prihlaseni-link:hover::before {
   background-image: url(../img/user-hover.ico);
 }
-
 header .main {
   height: calc(100vh - 90px);
   align-items: center;
 }
-
 header .header-main {
   grid-column: span 5;
   display: flex;
@@ -114,7 +99,6 @@ header .header-main {
   padding: 25px;
   border-radius: 20px;
 }
-
 header .header-main h1::after {
   content: "";
   width: 100%;
@@ -127,38 +111,36 @@ header .header-main h1::after {
   margin-bottom: 25px;
   box-shadow: 1px 2px 4px #747474;
 }
-
 header .header-main p {
   font-size: 1.3em;
 }
-
 header .header-main .main-btns {
   display: flex;
   margin-top: 15px;
 }
-
 header .header-main .main-btns button {
   width: 170px;
   display: inline-block;
   margin-right: 15px;
 }
-
-#btn-napiste-nam {
+header .header-main .main-btns #btn-napiste-nam {
   color: white;
   background-color: #1E1E1E;
   border: 3.5px solid #1E1E1E;
 }
-
-#btn-kdo-jsme {
+header .header-main .main-btns #btn-kdo-jsme {
   background: transparent;
   border: 3.5px solid #1E1E1E;
   overflow: hidden;
   position: relative;
   transition: all 0.35s ease;
 }
-
-#btn-kdo-jsme::before,
-#btn-kdo-jsme::after {
+header .header-main .main-btns #btn-kdo-jsme:hover {
+  color: white;
+  z-index: 1;
+  background: transparent;
+}
+header .header-main .main-btns #btn-kdo-jsme::before, header .header-main .main-btns #btn-kdo-jsme::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -170,22 +152,12 @@ header .header-main .main-btns button {
   background: #1E1E1E;
   transition: all 0.35s ease;
 }
-
-#btn-kdo-jsme::before {
+header .header-main .main-btns #btn-kdo-jsme::before {
   opacity: 0.5;
 }
-
-#btn-kdo-jsme::after {
+header .header-main .main-btns #btn-kdo-jsme::after {
   transition-delay: 0.2s;
 }
-
-#btn-kdo-jsme:hover {
-  color: white;
-  z-index: 1;
-  background: transparent;
-}
-
-#btn-kdo-jsme:hover:before,
-#btn-kdo-jsme:hover:after {
+header .header-main .main-btns #btn-kdo-jsme:hover::before, header .header-main .main-btns #btn-kdo-jsme:hover::after {
   top: 0;
 }/*# sourceMappingURL=header.css.map */
