@@ -11,6 +11,11 @@
 		background-color: $color-body;
 		line-height: $text-regular-line-height;
 	}
+
+	*::before,
+	*::after{
+	box-sizing: border-box;
+	}
 }
 
 @mixin grid {

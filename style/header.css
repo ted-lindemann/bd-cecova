@@ -96,8 +96,11 @@ header .header-main {
   flex-direction: column;
   justify-content: center;
   background-color: rgba(255, 249, 249, 0.65);
-  padding: 25px;
+  padding: 30px;
   border-radius: 20px;
+}
+header .header-main h1 {
+  margin-top: 15px;
 }
 header .header-main h1::after {
   content: "";
@@ -120,20 +123,24 @@ header .header-main .main-btns {
 }
 header .header-main .main-btns button {
   width: 170px;
+  height: 70px;
   display: inline-block;
   margin-right: 15px;
+  transition: all 0.35s ease;
 }
 header .header-main .main-btns #btn-napiste-nam {
   color: white;
   background-color: #1E1E1E;
   border: 3.5px solid #1E1E1E;
 }
+header .header-main .main-btns #btn-napiste-nam:hover {
+  color: #BC2D1F;
+}
 header .header-main .main-btns #btn-kdo-jsme {
   background: transparent;
   border: 3.5px solid #1E1E1E;
   overflow: hidden;
   position: relative;
-  transition: all 0.35s ease;
 }
 header .header-main .main-btns #btn-kdo-jsme:hover {
   color: white;
@@ -147,7 +154,6 @@ header .header-main .main-btns #btn-kdo-jsme::before, header .header-main .main-
   top: -100%;
   left: 0;
   z-index: -1;
-  box-sizing: border-box;
   position: absolute;
   background: #1E1E1E;
   transition: all 0.35s ease;
