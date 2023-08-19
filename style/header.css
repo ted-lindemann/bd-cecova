@@ -141,7 +141,7 @@ nav ul #prihlaseni-link a:hover::before {
   position: relative;
 }
 .uvod-main .main-btns #btn-kdo-jsme:hover {
-  color: white;
+  color: #BC2D1F;
   z-index: 1;
   background: transparent;
 }

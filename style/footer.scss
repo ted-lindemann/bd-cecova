@@ -1,0 +1,9 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+footer {
+	height: 300px;
+	width: 100%;
+	background-color: $color-gradient-darker;
+
+}
