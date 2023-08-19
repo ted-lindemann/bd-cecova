@@ -1,205 +1,197 @@
 @import "partials/variables";
 @import "partials/mixins";
 
-header 
+
+menu {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: $color-gradient-darker;
+}
+
+#bd-logo {
+	grid-column: span 4;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+.bd-nadpis {
+	font-size: 1.7em;
+	letter-spacing: -1px;
+	font-family: $text-heading-main-family;
+	font-weight: 500;
+	margin-left: 15px;
+	color: white;
+}
+
+nav 
 {
-	height: 100svh;
-	max-width: 100%;
-	background-image: url(../img/background-tiny.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	grid-column: span 8;
 
-	menu {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		background: $color-gradient-darker;
-	}
-
-	#bd-logo {
-		grid-column: span 4;
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-	}
-
-	.bd-nadpis {
-		font-size: 1.7em;
-		letter-spacing: -1px;
-		font-family: $text-heading-main-family;
-		font-weight: 500;
-		margin-left: 15px;
-		color: white;
-	}
-
-	nav 
+	ul 
 	{
-		width: 100%;
-		height: 100%;
-		grid-column: span 8;
-
-		ul 
-		{
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			list-style-type: none;
-
-			li 
-			{
-				display: flex; 
-				position: relative; 
-
-				a {
-					color: white;
-					text-align: center;
-					text-decoration: none;
-					height: 100%;
-					width: 100%;
-					padding: 25px 15px;
-
-					&:hover {
-						background: $color-gradient-lighter;
-					}
-					&::after { 
-						content: "";
-						display: block;
-						height: 2.5px;
-						width: 0;
-						position: absolute;
-						left: 50%;
-						background: $color-main;
-						transition: width 0.3s ease, left 0.3s ease;
-					}
-					&:hover::after { 
-						width: 80%; 
-						left: 10%; 
-					}
-				}
-			}
-
-			#prihlaseni-link {
-				position: relative;
-
-				a {
-					padding-left: 20px;
-
-					&::before {
-						content: "";
-						background-image: url(../img/user.ico);
-						background-size: 25px;
-						background-repeat: no-repeat;
-						background-position: center;
-						width: 25px;
-						height: 25px;
-						display: inline-block;
-						margin-right: 8px;
-						transition: all 0.2s ease;
-					}
-	
-					&:hover::before {
-						background-image: url(../img/user-hover.ico);
-					}
-				}
-			}
-		}
-	}
-	
-	.main {
-		height: calc(100svh - 90px);  		//without navbar
-		align-items: center;
-	}
-	
-	.header-main {
-		grid-column: span 5;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		background-color: rgb(255, 249, 249,0.65);
-		padding: 30px;
-		border-radius: 20px;
+		justify-content: space-between;
+		align-items: center;
+		list-style-type: none;
 
-		h1 {
-			margin-top: 15px;
+		li 
+		{
+			display: flex; 
+			position: relative; 
 
-			&::after {
-			content: "";
-			width: 100%;
-			height: 2.5px;
-			border-radius: 100px;
-			display: inline-block;
-			background-color: $color-main;
-			position: relative;
-			margin-top: 25px;
-			margin-bottom: 25px;
-			box-shadow: 1px 2px 4px #747474;
-			}
-		}
-
-		p {
-			font-size: 1.3em;
-		}
-
-		.main-btns {
-			display: flex;
-			margin-top: 15px;
-
-			button {
-				width: 170px;
-				height: 70px;
-				display: inline-block;
-				margin-right: 15px;
-				transition: all 0.35s ease;
-			}
-			
-			#btn-napiste-nam {
+			a {
 				color: white;
-				background-color: $color-secondary;
-				border: 3.5px solid $color-secondary;
+				text-align: center;
+				text-decoration: none;
+				height: 100%;
+				width: 100%;
+				padding: 25px 15px;
 
 				&:hover {
-					color: $color-main;
+					background: $color-gradient-lighter;
+				}
+				&::after { 
+					content: "";
+					display: block;
+					height: 2.5px;
+					width: 0;
+					position: absolute;
+					left: 50%;
+					background: $color-main;
+					transition: width 0.3s ease, left 0.3s ease;
+				}
+				&:hover::after { 
+					width: 80%; 
+					left: 10%; 
 				}
 			}
-			
-			#btn-kdo-jsme {
-				background: transparent;
-				border: 3.5px solid $color-secondary;
-				overflow: hidden;
-				position: relative;
+		}
 
-				&:hover{
-					color: white;
-					z-index: 1;
-					background: transparent;
-				}
+		#prihlaseni-link {
+			position: relative;
 
-				&::before,
-				&::after {
-					content: "";
-					width: 100%;
-					height: 100%;
-					top: -100%;
-					left: 0;
-					z-index: -1;
-					position: absolute;
-					background: $color-secondary;
-					transition: all 0.35s ease;
-				} 
+			a {
+				padding-left: 20px;
+
 				&::before {
-					opacity: 0.5;
-				}
-				&::after {
-					transition-delay: 0.2s;
+					content: "";
+					background-image: url(../img/user.ico);
+					background-size: 25px;
+					background-repeat: no-repeat;
+					background-position: center;
+					width: 25px;
+					height: 25px;
+					display: inline-block;
+					margin-right: 8px;
+					transition: all 0.2s ease;
 				}
 
-				&:hover::before,
-				&:hover::after{
-					top: 0;
+				&:hover::before {
+					background-image: url(../img/user-hover.ico);
 				}
 			}
 		}
 	}
 }
+
+.main {
+	height: calc(100svh - 90px);  		//without navbar
+	align-items: center;
+}
+
+.uvod-main {
+	grid-column: span 5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgb(255, 249, 249,0.65);
+	padding: 30px;
+	border-radius: 20px;
+
+	h1 {
+		margin-top: 15px;
+
+		&::after {
+		content: "";
+		width: 100%;
+		height: 2.5px;
+		border-radius: 100px;
+		display: inline-block;
+		background-color: $color-main;
+		position: relative;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		box-shadow: 1px 2px 4px #747474;
+		}
+	}
+
+	p {
+		font-size: 1.3em;
+	}
+
+	.main-btns {
+		display: flex;
+		margin-top: 15px;
+
+		button {
+			width: 170px;
+			height: 70px;
+			display: inline-block;
+			margin-right: 15px;
+			transition: all 0.35s ease;
+		}
+		
+		#btn-napiste-nam {
+			color: white;
+			background-color: $color-secondary;
+			border: 3.5px solid $color-secondary;
+
+			&:hover {
+				color: $color-main;
+			}
+		}
+		
+		#btn-kdo-jsme {
+			background: transparent;
+			border: 3.5px solid $color-secondary;
+			overflow: hidden;
+			position: relative;
+
+			&:hover{
+				color: white;
+				z-index: 1;
+				background: transparent;
+			}
+
+			&::before,
+			&::after {
+				content: "";
+				width: 100%;
+				height: 100%;
+				top: -100%;
+				left: 0;
+				z-index: -1;
+				position: absolute;
+				background: $color-secondary;
+				transition: all 0.35s ease;
+			} 
+			&::before {
+				opacity: 0.5;
+			}
+			&::after {
+				transition-delay: 0.2s;
+			}
+
+			&:hover::before,
+			&:hover::after{
+				top: 0;
+			}
+		}
+	}
+}
+
 
