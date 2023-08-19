@@ -80,25 +80,27 @@ header
 			}
 
 			#prihlaseni-link {
-				margin-left: 35px;
-				position: relative; 
+				position: relative;
 
-				&::before {
-					content: "";
-					background-image: url(../img/user.ico);
-					background-size: 25px;
-					background-repeat: no-repeat;
-					background-position: center;
-					width: 25px;
-					height: 25px;
-					display: inline-block;
-					transform: translateY(100%);
-					margin-right: -5px;
-					transition: all 0.2s ease;
-				}
+				a {
+					padding-left: 20px;
 
-				&:hover::before {
-					background-image: url(../img/user-hover.ico);
+					&::before {
+						content: "";
+						background-image: url(../img/user.ico);
+						background-size: 25px;
+						background-repeat: no-repeat;
+						background-position: center;
+						width: 25px;
+						height: 25px;
+						display: inline-block;
+						margin-right: 8px;
+						transition: all 0.2s ease;
+					}
+	
+					&:hover::before {
+						background-image: url(../img/user-hover.ico);
+					}
 				}
 			}
 		}

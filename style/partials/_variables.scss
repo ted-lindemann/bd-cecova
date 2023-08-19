@@ -6,8 +6,8 @@ $color-body: #fff9f9;
 $color-shadow: #747474;
 
 $color-grey-darkness3: $color-secondary;
-$color-grey-darkness2: #262626;
-$color-grey-darkness1: #2b2b2b;
+$color-grey-darkness2: lighten($color-grey-darkness3, 7%);
+$color-grey-darkness1: lighten($color-grey-darkness2, 7%);
 
 $color-header-div: rgb(255, 249, 249,0.65);
 
