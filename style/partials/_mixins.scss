@@ -97,12 +97,6 @@
 
 // ---------- ELEMENTS ----------
 
-@mixin icon {
-	color: $color-main;
-	font-size: 0.9em;
-	margin-right: 15px;
-}
-
 @mixin linkUnderline {
 	content: "";
 	display: block;
@@ -112,4 +106,18 @@
 	left: 50%;
 	background: $color-main;
 	transition: width 0.3s ease, left 0.3s ease;
+}
+
+@mixin bulletPoint($address: "../img/bullet-point.ico") {
+	content: "";
+	display: inline-block;
+	height: 0.4em;
+	width: 0.4em;
+	background-image: url($address);
+	background-size: 0.4em;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: translateY(-0.2em);
+	transition: all 0.2s ease;
+	margin-right: 15px;
 }

@@ -25,20 +25,10 @@ footer {
 			
 			a {
 				&::before {
-					content: "";
-					display: inline-block;
-					height: 0.4em;
-					width: 0.4em;
-					background-image: url("../img/bullet-point.ico");
-					background-size: 0.4em;
-					background-repeat: no-repeat;
-					background-position: center;
-					transform: translateY(-0.2em);
-					transition: all 0.2s ease;
-					margin-right: 15px;
+					@include bulletPoint();
 				}
 				&:hover::before {
-					background-image: url("../img/bullet-point-hover.ico");
+					@include bulletPoint("../img/bullet-point-hover.ico")
 				}
 	
 				&::after { 
@@ -50,8 +40,6 @@ footer {
 				}
 			}
 		}
-
-		
 	}
 
 	.footer-main {
