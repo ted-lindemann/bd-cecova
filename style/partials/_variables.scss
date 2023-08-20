@@ -10,6 +10,7 @@ $color-grey-darkness2: lighten($color-grey-darkness3, 7%);
 $color-grey-darkness1: lighten($color-grey-darkness2, 7%);
 
 $color-header-div: rgb(255, 249, 249,0.65);
+$color-border-line: rgb(255, 249, 249,0.2);
 
 $color-gradient-darker: linear-gradient(0deg, $color-grey-darkness3 0%, 
 	$color-grey-darkness3 50%,$color-grey-darkness2 50%, $color-grey-darkness2 100%);
