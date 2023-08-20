@@ -1,0 +1,54 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+footer {
+	height: 300px;
+	width: 100%;
+	background-color: $color-grey-darkness2;
+	border-top: 6px solid $color-border-line;
+	padding-top: 30px;
+
+	h5, p, a {
+		color: white;
+	}
+
+	a {
+		font-size: 1em;
+	}
+
+	.footer-nav {
+		grid-column: span 4;
+
+		li {
+			position: relative;
+			width: fit-content;
+			
+			a {
+				&::before {
+					@include bulletPoint();
+				}
+				&:hover::before {
+					@include bulletPoint("../img/bullet-point-hover.ico")
+				}
+	
+				&::after { 
+					@include linkUnderline;
+				}
+				&:hover::after { 
+					width: 80%; 
+					left: 20px; 
+				}
+			}
+		}
+	}
+
+	.footer-main {
+		grid-column: span 4;
+	}
+
+	.footer-kontakt {
+		grid-column: span 4;
+	}
+}
+
+

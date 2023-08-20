@@ -34,7 +34,7 @@
 @mixin textRegular($color: $text-color) {
 	font: {
 		family: $text-regular-family;
-		size: 1.2em;
+		size: 1.1em;
     	weight: $text-regular-weight;
 	}
 	color: $color;
@@ -57,7 +57,7 @@
 @mixin headingH1 {
 	font: {
 		family: $text-heading-main-family;
-		size: 3.7em;
+		size: 3.5em;
 		weight: $text-headings-weight;
 	}
 	text-shadow: $text-shadow;
@@ -67,7 +67,7 @@
 
 @mixin headingH2 {
 	@include headings($weight: 400);
-	font-size: 2em;
+	font-size: 1.8em;
 	letter-spacing: $text-letter-spacing;
 	line-height: 130%;
 	margin-bottom: 25px;
@@ -87,3 +87,37 @@
 	margin-bottom: 15px;
 }
 
+@mixin headingH5 {
+	@include headings();
+	font-size: 1.3em;
+	line-height: 130%;
+	margin-bottom: 15px;
+}
+
+
+// ---------- ELEMENTS ----------
+
+@mixin linkUnderline {
+	content: "";
+	display: block;
+	height: 2.5px;
+	width: 0;
+	position: absolute;
+	left: 50%;
+	background: $color-main;
+	transition: width 0.3s ease, left 0.3s ease;
+}
+
+@mixin bulletPoint($address: "../img/bullet-point.ico") {
+	content: "";
+	display: inline-block;
+	height: 0.4em;
+	width: 0.4em;
+	background-image: url($address);
+	background-size: 0.4em;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: translateY(-0.2em);
+	transition: all 0.2s ease;
+	margin-right: 15px;
+}
