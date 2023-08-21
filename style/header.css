@@ -1,8 +1,14 @@
+header {
+  width: 100svw;
+}
 header menu {
   width: 100%;
   display: flex;
   align-items: center;
   background: linear-gradient(0deg, #1E1E1E 0%, #1E1E1E 50%, #303030 50%, #303030 100%);
+}
+header menu .grid {
+  width: 100%;
 }
 header #bd-logo {
   grid-column: span 4;
@@ -19,13 +25,12 @@ header .bd-nadpis {
   color: white;
 }
 header nav {
-  width: 100%;
-  height: 100%;
   grid-column: span 8;
+  height: 100%;
 }
 header nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   list-style-type: none;
 }
@@ -60,6 +65,7 @@ header nav ul li a:hover::after {
 }
 header nav ul #prihlaseni-link {
   position: relative;
+  justify-self: flex-end;
 }
 header nav ul #prihlaseni-link a {
   padding-left: 20px;
@@ -78,87 +84,4 @@ header nav ul #prihlaseni-link a::before {
 }
 header nav ul #prihlaseni-link a:hover::before {
   background-image: url(../img/user-hover.ico);
-}
-
-.main {
-  height: calc(100svh - 90px);
-  align-items: center;
-}
-
-.uvod-main {
-  grid-column: span 5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgba(255, 249, 249, 0.65);
-  padding: 30px;
-  border-radius: 20px;
-}
-.uvod-main h1 {
-  margin-top: 15px;
-}
-.uvod-main h1::after {
-  content: "";
-  width: 100%;
-  height: 2.5px;
-  border-radius: 100px;
-  display: inline-block;
-  background-color: #BC2D1F;
-  position: relative;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  box-shadow: 1px 2px 4px #747474;
-}
-.uvod-main p {
-  font-size: 1.3em;
-}
-.uvod-main .main-btns {
-  display: flex;
-  margin-top: 15px;
-}
-.uvod-main .main-btns button {
-  width: 170px;
-  height: 70px;
-  display: inline-block;
-  margin-right: 15px;
-  transition: all 0.35s ease;
-}
-.uvod-main .main-btns #btn-napiste-nam {
-  color: white;
-  background-color: #1E1E1E;
-  border: 3.5px solid #1E1E1E;
-}
-.uvod-main .main-btns #btn-napiste-nam:hover {
-  color: #BC2D1F;
-}
-.uvod-main .main-btns #btn-kdo-jsme {
-  background: transparent;
-  border: 3.5px solid #1E1E1E;
-  overflow: hidden;
-  position: relative;
-}
-.uvod-main .main-btns #btn-kdo-jsme:hover {
-  color: #BC2D1F;
-  z-index: 1;
-  background: transparent;
-}
-.uvod-main .main-btns #btn-kdo-jsme::before, .uvod-main .main-btns #btn-kdo-jsme::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: -100%;
-  left: 0;
-  z-index: -1;
-  position: absolute;
-  background: #1E1E1E;
-  transition: all 0.35s ease;
-}
-.uvod-main .main-btns #btn-kdo-jsme::before {
-  opacity: 0.5;
-}
-.uvod-main .main-btns #btn-kdo-jsme::after {
-  transition-delay: 0.2s;
-}
-.uvod-main .main-btns #btn-kdo-jsme:hover::before, .uvod-main .main-btns #btn-kdo-jsme:hover::after {
-  top: 0;
 }/*# sourceMappingURL=header.css.map */

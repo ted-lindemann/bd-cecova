@@ -61,6 +61,10 @@ footer .footer-nav li a:hover::after {
 }
 footer .footer-main {
   grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
 }
 footer .footer-kontakt {
   grid-column: span 4;

@@ -7,7 +7,7 @@
 	body {
 		font-family: $text-regular-family;
 		font-weight: $text-regular-weight;
-		font-size: $text-regular-size;
+		font-size: $text-size;
 		background-color: $color-body;
 		line-height: $text-regular-line-height;
 	}
@@ -22,14 +22,15 @@
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
+		max-width: 100%;
 		gap: 15px;
-		width: 100svw;
 		margin: 0 8svw;
+		overflow: hidden;
 	}
 	
 }
 
-// ---------- TEXT ----------
+//& ------------------ TEXT ----------------------
 
 @mixin textRegular($color: $text-color) {
 	font: {
@@ -42,7 +43,7 @@
 
 @mixin textPar {
 	@include textRegular;
-	margin-bottom: 15px;
+	margin-bottom: $elmMarginBasic;
 }
 
 @mixin headings($color: $text-color, $weight: $text-headings-weight) {
@@ -77,25 +78,38 @@
 	@include headings($color: $color-main);
 	font-size: 1.5em;
 	line-height: 130%;
-	margin-bottom: 15px;
+	margin-bottom: $elmMarginBasic;
 }
 
 @mixin headingH4 {
 	@include headings();
 	font-size: 1.5em;
 	line-height: 130%;
-	margin-bottom: 15px;
+	margin-bottom: $elmMarginBasic;
 }
 
 @mixin headingH5 {
 	@include headings();
 	font-size: 1.3em;
 	line-height: 130%;
-	margin-bottom: 15px;
+	margin-bottom: $elmMarginBasic;
 }
 
 
-// ---------- ELEMENTS ----------
+//& ----------------- ELEMENTS ---------------------
+
+@mixin link {
+	font-size: $link-text-size;
+    font-family: $link-text-family;
+    font-weight: $link-text-weight; 
+	text-decoration: none;
+    color: black;
+    transition: $link-transition;
+
+	&:hover:not(.nav-link) {
+		color: $color-main;
+	}
+}
 
 @mixin linkUnderline {
 	content: "";
@@ -108,6 +122,70 @@
 	transition: width 0.3s ease, left 0.3s ease;
 }
 
+//--------buttons ------------------
+
+@mixin buttons {
+	height: $btn-height;
+	display: inline-block;
+	transition: $elmTransition;
+	font-size: $text-regular-size;
+    border-radius: $elmBorderRadius;
+    padding: 15px 10px;
+    font-family: $btn-text-family;
+    font-weight: $btn-text-weight; 
+    cursor: pointer;
+}
+
+@mixin buttonFill($width: fit-content) {
+	width: $width;
+	color: white;
+	background-color: $color-secondary;
+	border: $btn-border;
+
+	&:hover {
+		color: $color-main;
+	}
+}
+
+@mixin buttonStroke($width: fit-content) {
+	width: $width;
+	background: transparent;
+	border: $btn-border;
+	overflow: hidden;
+	position: relative;
+
+	&:hover{
+		color: $color-main;
+		z-index: 1;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		top: -100%;
+		left: 0;
+		z-index: -1;
+		position: absolute;
+		background: $color-secondary;
+		transition: $elmTransition;
+	} 
+	&::before {
+		opacity: 0.5;
+	}
+	&::after {
+		transition-delay: 0.2s;
+	}
+
+	&:hover::before,
+	&:hover::after{
+		top: 0;
+	}
+}
+
+//--------before & after ------------------
+
 @mixin bulletPoint($address: "../img/bullet-point.ico") {
 	content: "";
 	display: inline-block;
@@ -119,5 +197,6 @@
 	background-position: center;
 	transform: translateY(-0.2em);
 	transition: all 0.2s ease;
-	margin-right: 15px;
+	margin-right: $elmMarginBasic;
 }
+
