@@ -11,9 +11,9 @@
   align-items: center;
 }
 .uvod .uvod-main {
-  grid-column: span 5;
-  width: -moz-max-content;
-  width: max-content;
+  grid-column: span 6;
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +38,7 @@
   box-shadow: 1px 2px 4px #747474;
 }
 .uvod .uvod-main p {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .uvod .uvod-main .main-btns {
   display: flex;

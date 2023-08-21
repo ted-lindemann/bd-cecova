@@ -22,9 +22,10 @@
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
+		max-width: 100%;
 		gap: 15px;
-		width: 100svw;
 		margin: 0 8svw;
+		overflow: hidden;
 	}
 	
 }

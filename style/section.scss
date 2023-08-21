@@ -16,8 +16,8 @@
 	}
 	
 	.uvod-main {
-		grid-column: span 5;
-		width: max-content;
+		grid-column: span 6;
+		width: fit-content;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -44,7 +44,7 @@
 		}
 	
 		p {
-			font-size: 1.3em;
+			font-size: 1.2em;
 		}
 	
 		.main-btns {
