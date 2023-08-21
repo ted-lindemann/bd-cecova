@@ -1,7 +1,7 @@
 @import "partials/variables";
 @import "partials/mixins";
 
-//& -----------------------------------------------ÚVODNÍ STRÁNKA -------------------------------------------------
+//& -----------------------------------------------DOMOVSKÁ STRÁNKA -------------------------------------------------
 .uvod {
 	height: 100svh;
 	max-width: 100%;
@@ -17,11 +17,13 @@
 	
 	.uvod-main {
 		grid-column: span 5;
+		width: max-content;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		background-color: rgb(255, 249, 249,0.65);
 		padding: 30px;
+		padding-right: 50px;
 		border-radius: 20px;
 	
 		h1 {

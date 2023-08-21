@@ -29,7 +29,7 @@
 	
 }
 
-// ---------- TEXT ----------
+//& ------------------ TEXT ----------------------
 
 @mixin textRegular($color: $text-color) {
 	font: {
@@ -95,7 +95,11 @@
 }
 
 
-// ---------- ELEMENTS ----------
+//& ----------------- ELEMENTS ---------------------
+
+
+
+//--------before & after ------------------
 
 @mixin linkUnderline {
 	content: "";
@@ -121,3 +125,4 @@
 	transition: all 0.2s ease;
 	margin-right: 15px;
 }
+
