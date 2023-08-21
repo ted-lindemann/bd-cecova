@@ -97,6 +97,32 @@
 
 //& ----------------- ELEMENTS ---------------------
 
+@mixin link {
+	font-size: $link-text-size;
+    font-family: $link-text-family;
+    font-weight: $link-text-weight; 
+	text-decoration: none;
+    color: black;
+    transition: $link-transition;
+
+	&:hover:not(.nav-link) {
+		color: $color-main;
+	}
+}
+
+@mixin linkUnderline {
+	content: "";
+	display: block;
+	height: 2.5px;
+	width: 0;
+	position: absolute;
+	left: 50%;
+	background: $color-main;
+	transition: width 0.3s ease, left 0.3s ease;
+}
+
+//--------buttons ------------------
+
 @mixin buttons {
 	height: $btn-height;
 	display: inline-block;
@@ -158,17 +184,6 @@
 }
 
 //--------before & after ------------------
-
-@mixin linkUnderline {
-	content: "";
-	display: block;
-	height: 2.5px;
-	width: 0;
-	position: absolute;
-	left: 50%;
-	background: $color-main;
-	transition: width 0.3s ease, left 0.3s ease;
-}
 
 @mixin bulletPoint($address: "../img/bullet-point.ico") {
 	content: "";
