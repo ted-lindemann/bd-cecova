@@ -27,13 +27,7 @@ p {
 }
 
 button {
-    font-size: 1.2em;
-    border-radius: 20px;
-    padding: 15px 10px;
-    font-family: 'Expletus Sans';
-    font-weight: 600; 
-    width: max-content;
-    cursor: pointer;
+    @include buttons;
 }
 ul li {
     font-size: 1.15em;
@@ -49,9 +43,6 @@ a {
     transition: all 0.2s ease;
 }
 
-.icon {
-    @include icon;
-}
 
 // ---------- FONTS ----------
 

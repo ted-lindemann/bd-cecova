@@ -21,13 +21,14 @@ $color-gradient-lighter: linear-gradient(0deg, $color-grey-darkness2 0%,
 
 // ---------- TEXT ----------
 
+$text-size: 100%;
 $text-color: black;
 $text-shadow: 1px 1px 3px white;
 $text-letter-spacing: -1.5px;
 
 $text-regular-family: 'Faustina';
 $text-regular-weight: 400;
-$text-regular-size: 100%;
+$text-regular-size: 1.15em;
 $text-regular-line-height: 160%;
 
 $text-headings-family: 'Expletus Sans';
@@ -36,10 +37,18 @@ $text-headings-weight: 600;
 $text-heading-main-family: 'El Messiri';
 
 
-// ---------- ELM STYLES ----------
+// ---------- ELEMENTS ----------
+$elmBorderRadius: 20px;
+$elmTransition: all 0.35s ease;
+$elmMarginBasic: 15px;
 
+$btn-width: 170px;
+$btn-height: 65px;
+$btn-text-size: $text-regular-size;
+$btn-text-family: $text-headings-family;
+$btn-text-weight: $text-headings-weight;
 $btn-border: 3.5px solid $color-secondary;
+
+
 $line-shadow: 1px 2px 4px $color-shadow;
 
-
-// ---------- ELM SIZES ----------

@@ -44,22 +44,18 @@
   display: flex;
   margin-top: 15px;
 }
-.uvod .uvod-main .main-btns button {
-  width: 170px;
-  height: 70px;
-  display: inline-block;
-  margin-right: 15px;
-  transition: all 0.35s ease;
-}
 .uvod .uvod-main .main-btns #btn-napiste-nam {
+  width: 170px;
   color: white;
   background-color: #1E1E1E;
   border: 3.5px solid #1E1E1E;
+  margin-right: 15px;
 }
 .uvod .uvod-main .main-btns #btn-napiste-nam:hover {
   color: #BC2D1F;
 }
 .uvod .uvod-main .main-btns #btn-kdo-jsme {
+  width: 170px;
   background: transparent;
   border: 3.5px solid #1E1E1E;
   overflow: hidden;
@@ -68,7 +64,6 @@
 .uvod .uvod-main .main-btns #btn-kdo-jsme:hover {
   color: #BC2D1F;
   z-index: 1;
-  background: transparent;
 }
 .uvod .uvod-main .main-btns #btn-kdo-jsme::before, .uvod .uvod-main .main-btns #btn-kdo-jsme::after {
   content: "";
