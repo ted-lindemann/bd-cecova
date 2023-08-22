@@ -29,11 +29,15 @@ p {
 button {
     @include buttons;
 }
-ul li {
-    font-size: 1.15em;
-    font-family: 'Expletus Sans';
-    font-weight: 600; 
+
+ul {
+    @include ul;
 }
+
+li {
+    @include li;
+}
+
 a {
     @include link;
 }

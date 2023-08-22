@@ -104,7 +104,6 @@
     font-family: $link-text-family;
     font-weight: $link-text-weight; 
 	text-decoration: none;
-    color: black;
     transition: $link-transition;
 
 	&:hover:not(.nav-link) {
@@ -112,18 +111,17 @@
 	}
 }
 
-@mixin linkUnderline {
-	content: "";
-	display: block;
-	height: 2.5px;
-	width: 0;
-	position: absolute;
-	left: 50%;
-	background: $color-main;
-	transition: width 0.3s ease, left 0.3s ease;
+@mixin ul {
+	list-style-type: none;
 }
 
-//--------buttons ------------------
+@mixin li($font: $text-regular-family) {
+	font-size: $text-regular-size;
+    font-family: $font;
+    font-weight: $text-headings-weight; 
+}
+
+//---------------- buttons ------------------
 
 @mixin buttons {
 	height: $btn-height;
@@ -185,7 +183,7 @@
 	}
 }
 
-//--------before & after ------------------
+//-------------- before & after ------------------
 
 @mixin bulletPoint($address: "../img/bullet-point.ico") {
 	content: "";
@@ -210,4 +208,15 @@
 	background-color: $color-main;
 	position: relative;
 	margin-top: $margin-top;
+}
+
+@mixin linkUnderline {
+	content: "";
+	display: block;
+	height: 2.5px;
+	width: 0;
+	position: absolute;
+	left: 50%;
+	background: $color-main;
+	transition: width 0.3s ease, left 0.3s ease;
 }

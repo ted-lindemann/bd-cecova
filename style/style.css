@@ -95,9 +95,13 @@ button {
   cursor: pointer;
 }
 
-ul li {
+ul {
+  list-style-type: none;
+}
+
+li {
   font-size: 1.15em;
-  font-family: "Expletus Sans";
+  font-family: "Faustina";
   font-weight: 600;
 }
 
@@ -106,7 +110,6 @@ a {
   font-family: "Faustina";
   font-weight: 400;
   text-decoration: none;
-  color: black;
   transition: all 0.2s ease;
 }
 a:hover:not(.nav-link) {
