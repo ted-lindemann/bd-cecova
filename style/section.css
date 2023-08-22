@@ -20,7 +20,7 @@
   background-color: rgba(255, 249, 249, 0.65);
   padding: 30px;
   padding-right: 50px;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 .uvod .uvod-main h1 {
   margin-top: 15px;
@@ -35,7 +35,7 @@
   position: relative;
   margin-top: 25px;
   margin-bottom: 25px;
-  box-shadow: 1px 2px 4px #747474;
+  box-shadow: 1px 1px 4px #747474;
 }
 .uvod .uvod-main p {
   font-size: 1.2em;

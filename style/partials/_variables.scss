@@ -4,6 +4,7 @@ $color-main: #BC2D1F;
 $color-secondary: #1E1E1E;
 $color-body: #fff9f9;
 $color-shadow: #747474;
+$color-copy: #c4c4c4;
 
 $color-grey-darkness3: $color-secondary;
 $color-grey-darkness2: lighten($color-grey-darkness3, 7%);
@@ -30,7 +31,6 @@ $text-regular-family: 'Faustina';
 $text-regular-weight: 400;
 $text-regular-size: 1.15em;
 $text-regular-line-height: 160%;
-
 $text-headings-family: 'Expletus Sans';
 $text-headings-weight: 600;
 
@@ -38,7 +38,7 @@ $text-heading-main-family: 'El Messiri';
 
 
 // ---------- ELEMENTS ----------
-$elmBorderRadius: 20px;
+$elmBorderRadius: 5px;
 $elmTransition: all 0.35s ease;
 $elmMarginBasic: 15px;
 
@@ -56,4 +56,5 @@ $link-transition: all 0.2s ease;
 
 
 $line-shadow: 1px 2px 4px $color-shadow;
+$line-border-radius: 100px;
 

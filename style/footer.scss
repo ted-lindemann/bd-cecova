@@ -1,57 +1,98 @@
 @import "partials/variables";
 @import "partials/mixins";
 
-footer {
-	height: 300px;
+footer 
+{
+	height: 270px;
 	width: 100%;
 	background-color: $color-grey-darkness2;
 	border-top: 6px solid $color-border-line;
 	padding-top: 30px;
 
-	h5, p, a {
-		color: white;
-	}
+	.grid 
+	{
+		justify-items: center;
+		align-items: center;
 
-	a {
-		font-size: 1em;
-	}
-
-	.footer-nav {
-		grid-column: span 4;
-
-		li {
-			position: relative;
-			width: fit-content;
-			
-			a {
-				&::before {
-					@include bulletPoint();
-				}
-				&:hover::before {
-					@include bulletPoint("../img/bullet-point-hover.ico")
-				}
+		h5, p, a {
+			color: white;
+		}
 	
-				&::after { 
-					@include linkUnderline;
-				}
-				&:hover::after { 
-					width: 80%; 
-					left: 20px; 
+		.footer-nav 
+		{
+			grid-column: span 4;
+			width: max-content;
+	
+			li 
+			{
+				position: relative;
+				width: fit-content;
+				
+				a {
+					&::before {
+						@include bulletPoint();
+					}
+					&:hover::before {
+						@include bulletPoint("../img/bullet-point-hover.ico")
+					}
+		
+					&::after { 
+						@include linkUnderline;
+					}
+					&:hover::after { 
+						width: 80%; 
+						left: 20px; 
+					}
 				}
 			}
 		}
-	}
+	
+		.footer-main 
+		{
+			grid-column: span 4;
+			align-self: end;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+	
+			.title {
+				font-size: 1.4em;
+	
+				&::after {
+					@include underline(130%, 10px);
+					margin-bottom: 5px;
+					transform: translateX(-15%);
+					box-shadow: 1px 1px 15px black;		//! nechat?
+				}
+			}
+	
+			.copy {
+				font-size: 1em;
+				color: $color-copy;
 
-	.footer-main {
-		grid-column: span 4;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: end;
-	}
+				a {
+					font-size: 1em;
+				}
+			}
+		}
+	
+		.footer-kontakt 
+		{
+			grid-column: span 4;
+			width: max-content;
+			display: flex;
+			flex-direction: column;
+			justify-content: first baseline;
+			
+			a {
+				margin-bottom: 5px;
+			}
 
-	.footer-kontakt {
-		grid-column: span 4;
+			i {
+				color: $color-main;
+				margin-right: $elmMarginBasic;
+			}
+		}
 	}
 }
 

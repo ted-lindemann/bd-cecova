@@ -40,13 +40,13 @@ header {
 			display: flex;
 			justify-content: space-evenly;
 			align-items: center;
-			list-style-type: none;
 	
 			li 
 			{
+				font-size: $text-regular-size;
 				display: flex; 
 				position: relative; 
-	
+				
 				a {
 					color: white;
 					text-align: center;

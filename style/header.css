@@ -32,9 +32,9 @@ header nav ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  list-style-type: none;
 }
 header nav ul li {
+  font-size: 1.15em;
   display: flex;
   position: relative;
 }
