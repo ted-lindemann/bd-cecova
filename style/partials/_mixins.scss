@@ -10,6 +10,7 @@
 		font-size: $text-size;
 		background-color: $color-body;
 		line-height: $text-regular-line-height;
+		overflow-x: hidden;								//! ??
 	}
 
 	*::before,
@@ -35,7 +36,7 @@
 @mixin textRegular($color: $text-color) {
 	font: {
 		family: $text-regular-family;
-		size: 1.1em;
+		size: $text-regular-size;
     	weight: $text-regular-weight;
 	}
 	color: $color;
