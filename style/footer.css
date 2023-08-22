@@ -1,5 +1,5 @@
 footer {
-  height: 300px;
+  height: 270px;
   width: 100%;
   background-color: #303030;
   border-top: 6px solid rgba(255, 249, 249, 0.2);
@@ -65,6 +65,26 @@ footer .footer-main {
   flex-direction: column;
   align-items: center;
   justify-content: end;
+}
+footer .footer-main .title {
+  font-size: 1.4em;
+}
+footer .footer-main .title::after {
+  content: "";
+  width: 130%;
+  height: 2.5px;
+  border-radius: 100px;
+  display: inline-block;
+  background-color: #BC2D1F;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  transform: translateX(-15%);
+  box-shadow: 1px 1px 15px black;
+}
+footer .footer-main .copy {
+  font-size: 1em;
+  color: #c4c4c4;
 }
 footer .footer-kontakt {
   grid-column: span 4;
