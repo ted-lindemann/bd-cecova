@@ -12,9 +12,6 @@ footer .grid {
 footer .grid h5, footer .grid p, footer .grid a {
   color: white;
 }
-footer .grid a {
-  font-size: 1em;
-}
 footer .grid .footer-nav {
   grid-column: span 4;
   width: -moz-max-content;
@@ -92,6 +89,9 @@ footer .grid .footer-main .copy {
   font-size: 1em;
   color: #c4c4c4;
 }
+footer .grid .footer-main .copy a {
+  font-size: 1em;
+}
 footer .grid .footer-kontakt {
   grid-column: span 4;
   width: -moz-max-content;
@@ -99,6 +99,9 @@ footer .grid .footer-kontakt {
   display: flex;
   flex-direction: column;
   justify-content: first baseline;
+}
+footer .grid .footer-kontakt a {
+  margin-bottom: 5px;
 }
 footer .grid .footer-kontakt i {
   color: #BC2D1F;

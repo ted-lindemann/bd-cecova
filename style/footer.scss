@@ -18,10 +18,6 @@ footer
 			color: white;
 		}
 	
-		a {
-			font-size: 1em;
-		}
-	
 		.footer-nav 
 		{
 			grid-column: span 4;
@@ -73,6 +69,10 @@ footer
 			.copy {
 				font-size: 1em;
 				color: $color-copy;
+
+				a {
+					font-size: 1em;
+				}
 			}
 		}
 	
@@ -84,6 +84,9 @@ footer
 			flex-direction: column;
 			justify-content: first baseline;
 			
+			a {
+				margin-bottom: 5px;
+			}
 
 			i {
 				color: $color-main;

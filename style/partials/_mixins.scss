@@ -116,9 +116,8 @@
 }
 
 @mixin li($font: $text-regular-family) {
-	font-size: $text-regular-size;
     font-family: $font;
-    font-weight: $text-headings-weight; 
+    font-weight: $text-headings-weight;
 }
 
 //---------------- buttons ------------------
