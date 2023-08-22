@@ -87,7 +87,7 @@ button {
   display: inline-block;
   transition: all 0.35s ease;
   font-size: 1.15em;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 15px 10px;
   font-family: "Expletus Sans";
   font-weight: 600;

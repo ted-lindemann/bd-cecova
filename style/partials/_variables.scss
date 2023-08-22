@@ -38,7 +38,7 @@ $text-heading-main-family: 'El Messiri';
 
 
 // ---------- ELEMENTS ----------
-$elmBorderRadius: 20px;
+$elmBorderRadius: 5px;
 $elmTransition: all 0.35s ease;
 $elmMarginBasic: 15px;
 
@@ -47,6 +47,7 @@ $btn-height: 65px;
 $btn-text-size: $text-regular-size;
 $btn-text-family: $text-headings-family;
 $btn-text-weight: $text-headings-weight;
+$btn-border-radius: 100px;
 $btn-border: 3.5px solid $color-secondary;
 
 $link-text-size: $text-regular-size;
