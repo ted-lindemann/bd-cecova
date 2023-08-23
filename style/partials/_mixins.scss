@@ -24,9 +24,8 @@
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		max-width: 100%;
-		gap: 15px;
-		margin: 0 8svw;
-		overflow: hidden;
+		gap: 20px;
+		margin: 0 5%;
 	}
 	
 }
@@ -68,7 +67,7 @@
 }
 
 @mixin headingH2 {
-	@include headings($weight: 400);
+	@include headings;
 	font-size: 1.8em;
 	letter-spacing: $text-letter-spacing;
 	line-height: 130%;

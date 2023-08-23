@@ -28,12 +28,16 @@ header {
 		font-weight: 500;
 		margin-left: 15px;
 		color: white;
+		transform: translateY(0.1em);
+		white-space: nowrap;
 	}
 	
 	nav 
 	{
 		grid-column: span 8;
 		height: 100%;
+		justify-self: end;
+		margin-right: 1em;
 		
 		ul 
 		{
@@ -54,6 +58,7 @@ header {
 					height: 100%;
 					width: 100%;
 					padding: 25px 15px;
+					margin-left: 0.3em;
 	
 					&:hover {
 						background: $color-gradient-lighter;
@@ -71,6 +76,7 @@ header {
 			#prihlaseni-link {
 				position: relative;
 				justify-self: flex-end; //! ?opravit
+				white-space: nowrap;
 	
 				a {
 					padding-left: 20px;
@@ -96,6 +102,45 @@ header {
 		}
 	}
 }
+
+//& ------------------------ MEDIA QUERIES -----------------------------------
+
+@media only screen and (max-width: 1300px) {
+	header {
+		nav {
+			margin-right: 0;
+
+			a.nav-link {
+				margin-left: 0;
+				padding: 25px 10px;
+			}
+
+			#prihlaseni-link a {
+				padding-left: 10px;
+			}
+		}
+	} 
+} 
+
+@media only screen and (max-width: 1130px) {
+	#prihlaseni-link {
+		a.nav-link {
+			padding-right: 0;
+
+			&::before {
+			margin: 0;
+			}
+		}
+		
+		.span-signin-text {
+			display: none;
+		}
+	}
+} 
+
+/* @media only screen and (max-width: 992px) {
+
+} */
 
 
 

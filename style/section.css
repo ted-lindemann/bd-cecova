@@ -34,8 +34,13 @@
   background-color: #BC2D1F;
   position: relative;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   box-shadow: 1px 1px 4px #747474;
+}
+.uvod .uvod-main h2 {
+  font-family: "Faustina";
+  font-size: 1.8em;
+  letter-spacing: -0.8px;
 }
 .uvod .uvod-main p {
   font-size: 1.2em;
