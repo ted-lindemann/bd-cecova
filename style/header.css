@@ -23,6 +23,7 @@ header .bd-nadpis {
   font-weight: 500;
   margin-left: 15px;
   color: white;
+  transform: translateY(0.1em);
 }
 header nav {
   grid-column: span 8;
