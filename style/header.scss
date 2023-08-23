@@ -29,6 +29,7 @@ header {
 		margin-left: 15px;
 		color: white;
 		transform: translateY(0.1em);
+		white-space: nowrap;
 	}
 	
 	nav 
@@ -122,14 +123,24 @@ header {
 } 
 
 @media only screen and (max-width: 1130px) {
-	header {
-		nav {
-			#prihlaseni-link a {
-				display: none;
+	#prihlaseni-link {
+		a.nav-link {
+			padding-right: 0;
+
+			&::before {
+			margin: 0;
 			}
 		}
-	} 
-}
+		
+		.span-signin-text {
+			display: none;
+		}
+	}
+} 
+
+/* @media only screen and (max-width: 992px) {
+
+} */
 
 
 

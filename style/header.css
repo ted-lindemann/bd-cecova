@@ -24,6 +24,7 @@ header .bd-nadpis {
   margin-left: 15px;
   color: white;
   transform: translateY(0.1em);
+  white-space: nowrap;
 }
 header nav {
   grid-column: span 8;
@@ -104,7 +105,16 @@ header nav ul #prihlaseni-link a:hover::before {
   }
 }
 @media only screen and (max-width: 1130px) {
-  header nav #prihlaseni-link a {
+  #prihlaseni-link a.nav-link {
+    padding-right: 0;
+  }
+  #prihlaseni-link a.nav-link::before {
+    margin: 0;
+  }
+  #prihlaseni-link .span-signin-text {
     display: none;
   }
-}/*# sourceMappingURL=header.css.map */
+}
+/* @media only screen and (max-width: 992px) {
+
+} *//*# sourceMappingURL=header.css.map */
