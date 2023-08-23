@@ -70,6 +70,7 @@ header nav ul li a:hover::after {
 header nav ul #prihlaseni-link {
   position: relative;
   justify-self: flex-end;
+  white-space: nowrap;
 }
 header nav ul #prihlaseni-link a {
   padding-left: 20px;
@@ -88,4 +89,22 @@ header nav ul #prihlaseni-link a::before {
 }
 header nav ul #prihlaseni-link a:hover::before {
   background-image: url(../img/user-hover.ico);
+}
+
+@media only screen and (max-width: 1300px) {
+  header nav {
+    margin-right: 0;
+  }
+  header nav a.nav-link {
+    margin-left: 0;
+    padding: 25px 10px;
+  }
+  header nav #prihlaseni-link a {
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 1130px) {
+  header nav #prihlaseni-link a {
+    display: none;
+  }
 }/*# sourceMappingURL=header.css.map */
