@@ -88,6 +88,7 @@ footer .grid .footer-main .title::after {
 footer .grid .footer-main .copy {
   font-size: 1em;
   color: #c4c4c4;
+  text-align: center;
 }
 footer .grid .footer-main .copy a {
   font-size: 1em;
