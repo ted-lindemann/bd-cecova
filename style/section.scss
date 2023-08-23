@@ -1,7 +1,7 @@
 @import "partials/variables";
 @import "partials/mixins";
 
-//& -----------------------------------------------DOMOVSKÁ STRÁNKA -------------------------------------------------
+//& -------------------------------------------- DOMOVSKÁ STRÁNKA -------------------------------------------------
 .uvod {
 	height: 100svh;
 	max-width: 100%;
@@ -31,9 +31,15 @@
 	
 			&::after {
 			@include underline;
-			margin-bottom: 25px;
+			margin-bottom: 20px;
 			box-shadow: 1px 1px 4px $color-shadow;
 			}
+		}
+
+		h2 {
+			font-family: $text-regular-family;
+			font-size: 1.8em;
+			letter-spacing: -0.8px;
 		}
 	
 		p {

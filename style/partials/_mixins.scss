@@ -68,7 +68,7 @@
 }
 
 @mixin headingH2 {
-	@include headings($weight: 400);
+	@include headings;
 	font-size: 1.8em;
 	letter-spacing: $text-letter-spacing;
 	line-height: 130%;
