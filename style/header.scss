@@ -3,11 +3,15 @@
 
 header {
 	width: 100svw;
+	overflow: hidden;
+
 	menu {
+		height: 80px;
 		width: 100%;
 		display: flex;
 		align-items: center;
 		background: $color-gradient-darker;
+		z-index: 10;
 
 		.grid {
 			width: 100%;
@@ -50,6 +54,7 @@ header {
 				font-size: $text-regular-size;
 				display: flex; 
 				position: relative; 
+				overflow: hidden;
 				
 				a {
 					color: white;
@@ -73,7 +78,8 @@ header {
 				}
 			}
 	
-			#prihlaseni-link {
+			#prihlaseni-link 
+			{
 				position: relative;
 				justify-self: flex-end; //! ?opravit
 				white-space: nowrap;
@@ -98,6 +104,31 @@ header {
 						background-image: url(../img/user-hover.ico);
 					}
 				}
+			}
+		}
+	}
+	  
+	#hamburger-icon 
+	{
+		display: none; 
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center; 
+		width: 40px;
+		height: 30px;
+		cursor: pointer;
+		padding: 20px;
+		margin: 0;
+
+		.btn-line {
+			@include hamburgerIconLine;
+
+			&:nth-child(1) {
+				transform-origin: 0 0;
+			}
+
+			&:nth-child(3) {
+				transform-origin: 0 5px;
 			}
 		}
 	}
@@ -131,16 +162,76 @@ header {
 			margin: 0;
 			}
 		}
-		
-		.span-signin-text {
-			display: none;
-		}
 	}
 } 
 
-/* @media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1130px) and (min-width: 993px) {
+	.span-signin-text {
+		display: none;
+	}
+}
 
-} */
+@media only screen and (max-width: 992px) {
+	header {
+		.grid {
+			grid-template-columns: repeat(8, 1fr);
+		}
+
+		nav {
+			grid-column: span 8;
+			width: 70%;
+			position: absolute;
+			top: 80px;
+			right: 0;
+			padding: 0;
+			z-index: 5;
+			transform: translateX(100%);
+			transition: $menu-transition;
+
+			&.active {
+				transform: translateX(0);
+			}
+
+			ul {
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				
+				li {
+					padding: 0;
+					justify-content: center;
+					width: 100%;
+					color: white;
+					background-color: $color-secondary;
+					border-top: 1px solid $color-grey-darkness1;
+
+					a:hover::after { 
+						width: 20%; 
+						left: 40%; 
+					}
+				}
+			}
+		}
+
+		#hamburger-icon 
+		{
+			display: flex;
+			grid-column: 8;
+
+			&.active {
+				& :nth-child(1) {
+				transform: rotateZ(45deg);
+				} 
+				& :nth-child(2) {
+					opacity: 0;
+				}
+				& :nth-child(3) {
+					transform: rotateZ(-45deg);
+				}
+			}
+		}
+	}
+}
 
 
 
