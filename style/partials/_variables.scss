@@ -1,61 +1,62 @@
 // ---------- COLORS ----------
 
-$color-main: #BC2D1F;
-$color-secondary: #1E1E1E;
-$color-body: #fff9f9;
-$color-shadow: #747474;
-$color-copy: #c4c4c4;
+$clr-main: #BC2D1F;
+$clr-secondary: #1E1E1E;
+$clr-body: #fff9f9;
+$clr-shadow: #747474;
+$clr-copy: #c4c4c4;
+$clr-text: black;
 
-$color-grey-darkness3: $color-secondary;
-$color-grey-darkness2: lighten($color-grey-darkness3, 7%);
-$color-grey-darkness1: lighten($color-grey-darkness2, 7%);
+$clr-grey3: $clr-secondary;
+$clr-grey2: lighten($clr-grey3, 7%);
+$clr-grey1: lighten($clr-grey2, 7%);
 
-$color-header-div: rgb(255, 249, 249,0.65);
-$color-border-line: rgb(255, 249, 249,0.2);
+$clr-header-div: rgb(255, 249, 249,0.65);
+$clr-border-line: rgb(255, 249, 249,0.2);
 
-$color-gradient-darker: linear-gradient(0deg, $color-grey-darkness3 0%, 
-	$color-grey-darkness3 50%,$color-grey-darkness2 50%, $color-grey-darkness2 100%);
+$clr-gradient-dark: linear-gradient(0deg, $clr-grey3 0%, 
+	$clr-grey3 50%,$clr-grey2 50%, $clr-grey2 100%);
 
-$color-gradient-lighter: linear-gradient(0deg, $color-grey-darkness2 0%, 
-	$color-grey-darkness2 50%,$color-grey-darkness1 50%, $color-grey-darkness1 100%);
+$clr-gradient-light: linear-gradient(0deg, $clr-grey2 0%, 
+	$clr-grey2 50%,$clr-grey1 50%, $clr-grey1 100%);
 
 
+//--------------- STYLE -------------------
 // ---------- TEXT ----------
 
 $text-size: 100%;
-$text-color: black;
 $text-shadow: 1px 1px 3px white;
 $text-letter-spacing: -1.5px;
+//& převést text variables do 1 mixin a vložit do stylování regular textu??
+$text-reg-family: 'Faustina';
+$text-reg-weight: 400;
+$text-reg-size: 1.15em;
+$text-reg-line-height: 160%;
 
-$text-regular-family: 'Faustina';
-$text-regular-weight: 400;
-$text-regular-size: 1.15em;
-$text-regular-line-height: 160%;
-$text-headings-family: 'Expletus Sans';
-$text-headings-weight: 600;
-
-$text-heading-main-family: 'El Messiri';
+$text-head-main-family: 'El Messiri';
+$text-head-family: 'Expletus Sans';
+$text-head-weight: 600;
 
 
 // ---------- ELEMENTS ----------
-$elmBorderRadius: 5px;
-$elmTransition: all 0.35s ease;
-$elmMarginBasic: 15px;
+$elm-border-radius: 5px;
+$elm-transition: all 0.35s ease;
+$elm-margin-basic: 15px;
 
 $btn-width: 170px;
 $btn-height: 65px;
-$btn-text-size: $text-regular-size;
-$btn-text-family: $text-headings-family;
-$btn-text-weight: $text-headings-weight;
-$btn-border: 3.5px solid $color-secondary;
+$btn-text-size: $text-reg-size;
+$btn-text-family: $text-head-family;
+$btn-text-weight: $text-head-weight;
+$btn-border: 3.5px solid $clr-secondary;
 
-$link-text-size: $text-regular-size;
-$link-text-family: $text-regular-family;
-$link-text-weight: $text-regular-weight;
+$link-text-size: $text-reg-size;
+$link-text-family: $text-reg-family;
+$link-text-weight: $text-reg-weight;
 $link-transition: all 0.2s ease;
 
-$menu-transition: all 0.5s ease-in-out;
+//$menu-transition: 
 
-$line-shadow: 1px 2px 4px $color-shadow;
+$line-shadow: 1px 2px 4px $clr-shadow;
 $line-border-radius: 100px;
 

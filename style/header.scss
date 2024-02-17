@@ -10,7 +10,7 @@ header {
 		width: 100%;
 		display: flex;
 		align-items: center;
-		background: $color-gradient-darker;
+		background: $clr-gradient-dark;
 		z-index: 10;
 
 		.grid {
@@ -28,7 +28,7 @@ header {
 	.bd-nadpis {
 		font-size: 1.7em;
 		letter-spacing: -1px;
-		font-family: $text-heading-main-family;
+		font-family: $text-head-main-family;
 		font-weight: 500;
 		margin-left: 15px;
 		color: white;
@@ -51,7 +51,7 @@ header {
 	
 			li 
 			{
-				font-size: $text-regular-size;
+				font-size: $text-reg-size;
 				display: flex; 
 				position: relative; 
 				overflow: hidden;
@@ -66,7 +66,7 @@ header {
 					margin-left: 0.3em;
 	
 					&:hover {
-						background: $color-gradient-lighter;
+						background: $clr-gradient-light;
 					}
 					&::after { 
 						@include linkUnderline;
@@ -178,15 +178,15 @@ header {
 		}
 
 		nav {
-			grid-column: span 8;
-			width: 70%;
+			grid-column: span 8;	//& upravit šířku menu 
+			width: 300px;
 			position: absolute;
 			top: 80px;
 			right: 0;
 			padding: 0;
 			z-index: 5;
 			transform: translateX(100%);
-			transition: $menu-transition;
+			transition: all 0.5s ease-in-out;
 
 			&.active {
 				transform: translateX(0);
@@ -202,8 +202,8 @@ header {
 					justify-content: center;
 					width: 100%;
 					color: white;
-					background-color: $color-secondary;
-					border-top: 1px solid $color-grey-darkness1;
+					background-color: $clr-secondary;
+					border-top: 1px solid $clr-grey1;
 
 					a:hover::after { 
 						width: 20%; 

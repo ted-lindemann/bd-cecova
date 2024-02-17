@@ -5,8 +5,8 @@ footer
 {
 	height: 270px;
 	width: 100%;
-	background-color: $color-grey-darkness2;
-	border-top: 6px solid $color-border-line;
+	background-color: $clr-grey2;
+	border-top: 6px solid $clr-border-line;
 	padding-top: 30px;
 
 	.grid 
@@ -68,7 +68,7 @@ footer
 	
 			.copy {
 				font-size: 1em;
-				color: $color-copy;
+				color: $clr-copy;
 				text-align: center;
 
 				a {
@@ -90,8 +90,8 @@ footer
 			}
 
 			i {
-				color: $color-main;
-				margin-right: $elmMarginBasic;
+				color: $clr-main;
+				margin-right: $elm-margin-basic;
 			}
 		}
 	}
