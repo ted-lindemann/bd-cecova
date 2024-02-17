@@ -8,7 +8,7 @@ body {
   font-size: 100%;
   background-color: #fff9f9;
   line-height: 160%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 *::before,

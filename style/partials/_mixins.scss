@@ -5,12 +5,12 @@
 		scroll-behavior: smooth;
 	}
 	body {
-		font-family: $text-regular-family;
-		font-weight: $text-regular-weight;
+		font-family: $text-reg-family;
+		font-weight: $text-reg-weight;
 		font-size: $text-size;
-		background-color: $color-body;
-		line-height: $text-regular-line-height;
-		overflow: hidden;								//! ??
+		background-color: $clr-body;
+		line-height: $text-reg-line-height;
+		overflow-x: hidden;								//! ??
 	}
 
 	*::before,
@@ -32,38 +32,38 @@
 
 //& ------------------ TEXT ----------------------
 
-@mixin textRegular($color: $text-color) {
+@mixin textRegular($clr: $clr-text) {
 	font: {
-		family: $text-regular-family;
-		size: $text-regular-size;
-    	weight: $text-regular-weight;
+		family: $text-reg-family;
+		size: $text-reg-size;
+    	weight: $text-reg-weight;
 	}
-	color: $color;
+	color: $clr;
 }
 
 @mixin textPar {
 	@include textRegular;
-	margin-bottom: $elmMarginBasic;
+	margin-bottom: $elm-margin-basic;
 }
 
-@mixin headings($color: $text-color, $weight: $text-headings-weight) {
+@mixin headings($clr: $clr-text, $weight: $text-head-weight) {
 	font: {
-		family: $text-headings-family;
+		family: $text-head-family;
 		weight: $weight;
 	}
 	letter-spacing: $text-letter-spacing;
-	color: $color;
+	color: $clr;
 }
 
 @mixin headingH1 {
 	font: {
-		family: $text-heading-main-family;
+		family: $text-head-main-family;
 		size: 3.5em;
-		weight: $text-headings-weight;
+		weight: $text-head-weight;
 	}
 	text-shadow: $text-shadow;
 	letter-spacing: $text-letter-spacing;
-	color: $text-color;
+	color: $clr-text;
 }
 
 @mixin headingH2 {
@@ -75,24 +75,24 @@
 }
 
 @mixin headingH3 {
-	@include headings($color: $color-main);
+	@include headings($clr: $clr-main);
 	font-size: 1.5em;
 	line-height: 130%;
-	margin-bottom: $elmMarginBasic;
+	margin-bottom: $elm-margin-basic;
 }
 
 @mixin headingH4 {
 	@include headings();
 	font-size: 1.5em;
 	line-height: 130%;
-	margin-bottom: $elmMarginBasic;
+	margin-bottom: $elm-margin-basic;
 }
 
 @mixin headingH5 {
 	@include headings();
 	font-size: 1.3em;
 	line-height: 130%;
-	margin-bottom: $elmMarginBasic;
+	margin-bottom: $elm-margin-basic;
 }
 
 
@@ -106,7 +106,7 @@
     transition: $link-transition;
 
 	&:hover:not(.nav-link) {
-		color: $color-main;
+		color: $clr-main;
 	}
 }
 
@@ -114,9 +114,9 @@
 	list-style-type: none;
 }
 
-@mixin li($font: $text-regular-family) {
+@mixin li($font: $text-reg-family) {
     font-family: $font;
-    font-weight: $text-headings-weight;
+    font-weight: $text-head-weight;
 }
 
 @mixin hamburgerIconLine {
@@ -132,9 +132,9 @@
 @mixin buttons {
 	height: $btn-height;
 	display: inline-block;
-	transition: $elmTransition;
-	font-size: $text-regular-size;
-    border-radius: $elmBorderRadius;
+	transition: $elm-transition;
+	font-size: $text-reg-size;
+    border-radius: $elm-border-radius;
     padding: 15px 10px;
     font-family: $btn-text-family;
     font-weight: $btn-text-weight; 
@@ -144,11 +144,11 @@
 @mixin buttonFill($width: fit-content) {
 	width: $width;
 	color: white;
-	background-color: $color-secondary;
+	background-color: $clr-secondary;
 	border: $btn-border;
 
 	&:hover {
-		color: $color-main;
+		color: $clr-main;
 	}
 }
 
@@ -160,7 +160,7 @@
 	position: relative;
 
 	&:hover{
-		color: $color-main;
+		color: $clr-main;
 		z-index: 1;
 	}
 
@@ -173,8 +173,8 @@
 		left: 0;
 		z-index: -1;
 		position: absolute;
-		background: $color-secondary;
-		transition: $elmTransition;
+		background: $clr-secondary;
+		transition: $elm-transition;
 	} 
 	&::before {
 		opacity: 0.5;
@@ -202,7 +202,7 @@
 	background-position: center;
 	transform: translateY(-0.2em);
 	transition: all 0.2s ease;
-	margin-right: $elmMarginBasic;
+	margin-right: $elm-margin-basic;
 }
 
 @mixin underline($width: 100%, $margin-top: 25px) {
@@ -211,7 +211,7 @@
 	height: 2.5px;
 	border-radius: $line-border-radius;
 	display: inline-block;
-	background-color: $color-main;
+	background-color: $clr-main;
 	position: relative;
 	margin-top: $margin-top;
 }
@@ -223,6 +223,6 @@
 	width: 0;
 	position: absolute;
 	left: 50%;
-	background: $color-main;
+	background: $clr-main;
 	transition: width 0.3s ease, left 0.3s ease;
 }
