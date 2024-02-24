@@ -66,11 +66,10 @@ header nav ul li a::after {
   position: absolute;
   left: 50%;
   background: #BC2D1F;
-  transition: width 0.3s ease, left 0.3s ease;
+  transition: width 0.3s ease;
 }
 header nav ul li a:hover::after {
-  width: 80%;
-  left: 10%;
+  width: 60%;
 }
 header nav ul #prihlaseni-link {
   position: relative;
@@ -82,7 +81,7 @@ header nav ul #prihlaseni-link a {
 }
 header nav ul #prihlaseni-link a::before {
   content: "";
-  background-image: url(../img/user.ico);
+  background-image: url(../../img/user.ico);
   background-size: 25px;
   background-repeat: no-repeat;
   background-position: center;
@@ -93,7 +92,7 @@ header nav ul #prihlaseni-link a::before {
   transition: all 0.2s ease;
 }
 header nav ul #prihlaseni-link a:hover::before {
-  background-image: url(../img/user-hover.ico);
+  background-image: url(../../img/user-hover.ico);
 }
 header #hamburger-icon {
   display: none;
@@ -111,7 +110,7 @@ header #hamburger-icon .btn-line {
   width: 100%;
   background-color: white;
   border-radius: 10px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease;
 }
 header #hamburger-icon .btn-line:nth-child(1) {
   transform-origin: 0 0;
@@ -151,7 +150,7 @@ header #hamburger-icon .btn-line:nth-child(3) {
   }
   header nav {
     grid-column: span 8;
-    width: 70%;
+    width: 300px;
     position: absolute;
     top: 80px;
     right: 0;

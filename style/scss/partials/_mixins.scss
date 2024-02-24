@@ -124,7 +124,7 @@
 	width: 100%;
 	background-color: white;
 	border-radius: 10px;
-	transition: $menu-transition;
+	transition: all 0.2s ease;
 }
 
 //---------------- buttons ------------------
@@ -191,7 +191,7 @@
 
 //-------------- before & after ------------------
 
-@mixin bulletPoint($address: "../img/bullet-point.ico") {
+@mixin bulletPoint($address: "../../img/bullet-point.ico") {
 	content: "";
 	display: inline-block;
 	height: 0.4em;
@@ -224,5 +224,5 @@
 	position: absolute;
 	left: 50%;
 	background: $clr-main;
-	transition: width 0.3s ease, left 0.3s ease;
+	transition: width 0.3s ease;
 }

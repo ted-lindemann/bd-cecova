@@ -14,12 +14,10 @@ footer .grid h5, footer .grid p, footer .grid a {
 }
 footer .grid .footer-nav {
   grid-column: span 4;
-  width: -moz-max-content;
   width: max-content;
 }
 footer .grid .footer-nav li {
   position: relative;
-  width: -moz-fit-content;
   width: fit-content;
 }
 footer .grid .footer-nav li a::before {
@@ -27,7 +25,7 @@ footer .grid .footer-nav li a::before {
   display: inline-block;
   height: 0.4em;
   width: 0.4em;
-  background-image: url("../img/bullet-point.ico");
+  background-image: url("../../img/bullet-point.ico");
   background-size: 0.4em;
   background-repeat: no-repeat;
   background-position: center;
@@ -40,7 +38,7 @@ footer .grid .footer-nav li a:hover::before {
   display: inline-block;
   height: 0.4em;
   width: 0.4em;
-  background-image: url("../img/bullet-point-hover.ico");
+  background-image: url("../../img/bullet-point-hover.ico");
   background-size: 0.4em;
   background-repeat: no-repeat;
   background-position: center;
@@ -56,7 +54,7 @@ footer .grid .footer-nav li a::after {
   position: absolute;
   left: 50%;
   background: #BC2D1F;
-  transition: width 0.3s ease, left 0.3s ease;
+  transition: width 0.3s ease;
 }
 footer .grid .footer-nav li a:hover::after {
   width: 80%;
@@ -95,7 +93,6 @@ footer .grid .footer-main .copy a {
 }
 footer .grid .footer-kontakt {
   grid-column: span 4;
-  width: -moz-max-content;
   width: max-content;
   display: flex;
   flex-direction: column;
